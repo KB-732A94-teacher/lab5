@@ -20,12 +20,14 @@
 
 gaddress <- function(address) {
   
+  stopifnot(is.character(address))
+  
   #address transform
   address <- gsub(" ","+", address)
   
   g_url <- "https://maps.googleapis.com/maps/api/geocode/json?address="
   key <- "&key=AIzaSyCbnQWy0geP8Md3nJxfHevjKSx9TK3xI_w"
-  g_data <- fromJSON(paste0(g_url, address, key))
+  g_data <- jsonlite::fromJSON(paste0(g_url, address, key))
   
   if(g_data$status == "ZERO_RESULTS"){
     stop(print("No results found"))
@@ -45,7 +47,7 @@ gaddress <- function(address) {
   
   if(g_data$status == "OK"){
     #printing input address
-    cat("Input address: ", address,"\n\n")
+    cat("Input address:", address,"\n\n")
     
     #summary of the info
     lat = g_data$results[[3]]$location$lat

@@ -20,11 +20,13 @@
 
 glatlng <- function(latlng) {
   
+  stopifnot(is.character(latlng))
+  
   latlng <- gsub(" ","", latlng)
   
   g_url <- "https://maps.googleapis.com/maps/api/geocode/json?latlng="
   key <- "&key=AIzaSyCbnQWy0geP8Md3nJxfHevjKSx9TK3xI_w"
-  g_data <- fromJSON(paste0(g_url, latlng, key))
+  g_data <- jsonlite::fromJSON(paste0(g_url, latlng, key))
   
   if(g_data$status == "ZERO_RESULTS"){
     stop(print("No results found"))

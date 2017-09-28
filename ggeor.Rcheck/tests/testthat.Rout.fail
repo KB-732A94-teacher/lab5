@@ -1,0 +1,55 @@
+
+R version 3.4.1 (2017-06-30) -- "Single Candle"
+Copyright (C) 2017 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> library(testthat)
+> library(ggeor)
+> 
+> test_check("ggeor")
+Input address: linkoping 
+
+1. Failure: Outputs are correct (@test_ggeor.R#8) ------------------------------
+print(test) does not match "590 92 Totebo".
+Actual value: "    address      lat      lng\n1 linkoping 58.41081 15.62137"
+
+
+2. Failure: Outputs are correct (@test_ggeor.R#9) ------------------------------
+print(test) does not match "57.62".
+Actual value: "    address      lat      lng\n1 linkoping 58.41081 15.62137"
+
+
+3. Failure: Outputs are correct (@test_ggeor.R#10) -----------------------------
+print(test) does not match "16.18".
+Actual value: "    address      lat      lng\n1 linkoping 58.41081 15.62137"
+
+
+4. Error: class of data_address is correct (@test_ggeor.R#26) ------------------
+could not find function "data_address"
+1: expect_true(class(data_address("Totebo")) == "data.frame") at testthat/test_ggeor.R:26
+2: expect(identical(as.vector(object), TRUE), sprintf("%s isn't true.", lab), info = info)
+3: as.expectation(exp, ..., srcref = srcref)
+4: identical(as.vector(object), TRUE)
+5: as.vector(object)
+
+testthat results ================================================================
+OK: 5 SKIPPED: 0 FAILED: 4
+1. Failure: Outputs are correct (@test_ggeor.R#8) 
+2. Failure: Outputs are correct (@test_ggeor.R#9) 
+3. Failure: Outputs are correct (@test_ggeor.R#10) 
+4. Error: class of data_address is correct (@test_ggeor.R#26) 
+
+Error: testthat unit tests failed
+Execution halted
