@@ -1,9 +1,10 @@
 Package: ggeor
 Type: Package
-Title: What the package does (short line)
+Title: ggeor package utilizes google maps API to geocode or reverse geocode of the location
 Version: 1.0
 Date: 2017-09-27
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Josh Hyungyum Kim
+Maintainer: Josh Hyungyum Kim <gyommy15@gmail.com>
+Description: gaddress() fuction takes address and returns latitude and longitude, glatlng() function takes latitude and longitude and returns address.
+License: MIT
+RoxygenNote: 6.0.1
