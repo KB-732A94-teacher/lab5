@@ -12,14 +12,13 @@
 #'@description Returns latitude and longitude of the given input location.
 #'@param address Character class of location address
 #'@export
+#'@import jsonlite curl
 #'@return A data.frame contains address, latitude and longitude of given location.
 #'@examples 
-#'gaddress("37.56654, 126.978")
-#'gaddress("37.55723, 127.0453")
+#'gaddress("Linkoping")
+#'gaddress("Hanyang University")
 
 gaddress <- function(address) {
-  
-  library(jsonlite)
   
   #address transform
   address <- gsub(" ","+", address)

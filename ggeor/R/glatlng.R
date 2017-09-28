@@ -12,14 +12,13 @@
 #'@description Returns address of the given latitude and longitude.
 #'@param latlng Character class of latitude and longitude separated by ,
 #'@export
+#'@import jsonlite curl
 #'@return Character class of the address of the given latitude and longitude.
 #'@examples 
-#'glatlng("Seoul")
-#'glatlng("Hanyang University")
+#'glatlng("37.56654, 126.978")
+#'glatlng("37.55723, 127.0453")
 
 glatlng <- function(latlng) {
-  
-  library(jsonlite)
   
   latlng <- gsub(" ","", latlng)
   

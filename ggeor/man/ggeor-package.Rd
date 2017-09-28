@@ -19,8 +19,8 @@ Maintainer: \packageMaintainer{ggeor}
 }
 \keyword{ package }
 \examples{
-gaddress("37.56654, 126.978")
-gaddress("37.55723, 127.0453")
-glatlng("Seoul")
-glatlng("Hanyang University")
+gaddress("Seoul")
+gaddress("Hanyang University")
+glatlng("37.56654, 126.978")
+glatlng("37.55723, 127.0453")
 }

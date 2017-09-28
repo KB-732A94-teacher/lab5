@@ -8,3 +8,5 @@ Maintainer: Josh Hyungyum Kim <gyommy15@gmail.com>
 Description: gaddress() fuction takes address and returns latitude and longitude, glatlng() function takes latitude and longitude and returns address.
 License: MIT
 RoxygenNote: 6.0.1
+Imports: jsonlite,  curl
+Suggests: testthat

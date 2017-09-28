@@ -16,6 +16,6 @@ Character class of the address of the given latitude and longitude.
 Returns address of the given latitude and longitude.
 }
 \examples{
-glatlng("Seoul")
-glatlng("Hanyang University")
+glatlng("37.56654, 126.978")
+glatlng("37.55723, 127.0453")
 }

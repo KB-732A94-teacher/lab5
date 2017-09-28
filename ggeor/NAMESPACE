@@ -2,3 +2,5 @@
 
 export(gaddress)
 export(glatlng)
+import(curl)
+import(jsonlite)
