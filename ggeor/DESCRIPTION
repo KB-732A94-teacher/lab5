@@ -9,4 +9,7 @@ Description: gaddress() fuction takes address and returns latitude and longitude
 License: MIT
 RoxygenNote: 6.0.1
 Imports: jsonlite,  curl
-Suggests: testthat
+Suggests: testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
