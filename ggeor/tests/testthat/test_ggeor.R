@@ -16,7 +16,7 @@ test_that("Wrong inputs give error",{
 
 test_that("Proper error message",{
   expect_error(gaddress("kim josh hyungyum"))
-  expect_error(gaddress("cant find anything"))
+  expect_error(gaddress("can't find anything"))
 })
 
 test_that("Class of the return value",{
