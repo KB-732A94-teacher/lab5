@@ -10,7 +10,7 @@
 
 #'@title glatlng
 #'@description Returns address of the given latitude and longitude.
-#'@param latlng Character class of latitude and longitude separated by ,
+#'@param latlng Character class of latitude and longitude separated by ","
 #'@export
 #'@import jsonlite curl
 #'@return Character class of the address of the given latitude and longitude.
