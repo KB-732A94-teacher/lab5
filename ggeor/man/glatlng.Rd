@@ -7,7 +7,7 @@
 glatlng(latlng)
 }
 \arguments{
-\item{latlng}{Character class of latitude and longitude separated by ,}
+\item{latlng}{Character class of latitude and longitude separated by ","}
 }
 \value{
 Character class of the address of the given latitude and longitude.
