@@ -22,6 +22,7 @@ glatlng <- function(latlng) {
   
   stopifnot(is.character(latlng))
   
+  #latitude, longitude transform
   latlng <- gsub(" ","", latlng)
   
   g_url <- "https://maps.googleapis.com/maps/api/geocode/json?latlng="
